@@ -1,0 +1,17 @@
+spring:
+    application:
+        name : springbootZuul
+
+server:
+    port : 6005
+
+eureka:
+    client:
+        service-url:
+            defaultZone : http://localhost:5000/eureka/
+
+zuul:
+    routes:
+        sbService :
+            path : /sbService/**
+            serviceId : springbootService

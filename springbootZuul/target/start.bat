@@ -1,0 +1,1 @@
+java -jar springbootProject-1.0-SNAPSHOT.jar
